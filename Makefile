@@ -7,7 +7,7 @@
 # The default value is base.
 # Support values: base, base_cm, base_mt6592 and other devices in the future.
 #-----------------------------------------------------------------------------
-#BASE := base_cm
+BASE := base_cm
 
 ##############################################################################
 # The value is used for resource adapter with the aapt tool.
@@ -142,7 +142,7 @@ board_saved_files := lib/libwebviewchromium.so
 # You should configure the property according to your device and your ID with replace the "Nexus-5_Unofficial".
 override_property += \
     ro.flyme.romer=Unofficial \
-    ro.product.model_romer=Nexus-5_Unofficial
+    ro.product.model_romer=vegetafhd_Unofficial
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
