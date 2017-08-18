@@ -1,0 +1,4 @@
+#!/system/bin/sh
+#Init.d Double Tap to Wake enabler
+
+busybox echo 1 > /sys/devices/platform/mtk-tpd/control_double_tap;
