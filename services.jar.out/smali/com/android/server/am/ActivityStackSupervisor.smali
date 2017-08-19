@@ -87,6 +87,10 @@
 # instance fields
 .field private browserPackageName:Ljava/lang/String;
 
+.field mFlymeAccessControlManager:Lmeizu/security/AccessControlManager;
+
+.field mRealPm:Lcom/android/server/pm/PackageManagerService;
+
 .field inResumeTopActivity:Z
 
 .field private mActivityContainers:Landroid/util/SparseArray;
@@ -11881,6 +11885,18 @@
 
     .end local v29    # "e":Landroid/os/RemoteException;
     :cond_1f
+    move-object/from16 v7, p0
+
+    move-object/from16 v8, p2
+
+    move-object/from16 v9, p4
+
+    move/from16 v10, p11
+
+    invoke-static {v7, v8, v9, v10}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->interceptForAccessControl(Lcom/android/server/am/ActivityStackSupervisor;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;I)Landroid/content/pm/ActivityInfo;
+
+    move-result-object p4
+
     new-instance v7, Lcom/android/server/am/ActivityRecord;
 
     move-object/from16 v0, p0
