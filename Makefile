@@ -59,7 +59,6 @@ vendor_saved_apps := Bluetooth \
                      KeyChain \
                      HTMLViewer \
                      UserDictionaryProvider \
-                     DefaultContainerService \
                      BackupRestoreConfirmation \
                      FusedLocation \
                      PrintSpooler \
